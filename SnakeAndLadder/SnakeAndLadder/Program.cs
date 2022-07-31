@@ -14,6 +14,24 @@ namespace SnakeAndLadder
             Random random = new Random();
             int number = random.Next(0, 7);
             Console.WriteLine("Die Rolled By the Player And The Number is:"+number);
+            int option = random.Next(0, 3);
+
+            switch (option)
+            {
+                case 0:
+                    Console.WriteLine("No play");
+                    break;
+                case 1:
+                    Console.WriteLine("Ladder");
+                    position = position + number;
+                    break;
+                case 2:
+                    Console.WriteLine("Snake");
+                    position = position - number;
+                    break;
+
+
+            }
         }
     }
 }
