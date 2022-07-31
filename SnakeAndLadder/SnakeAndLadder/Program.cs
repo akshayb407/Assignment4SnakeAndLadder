@@ -8,8 +8,9 @@ namespace SnakeAndLadder
         {
             Console.WriteLine("Welcome to the Snake And Ladder Program!");
             const int player = 1;
+            const int player2 =2 ;
             int position = 0;            
-            Console.WriteLine($"Snake And Ladder Played With  Player :" + player+ ";   " +"Starting Position Of the Player is:" + position);  ; ;
+            Console.WriteLine($"Snake And Ladder Played With  Player :" + player+ ", "+player2+ ";   " +"Starting Position Of the Player is:" + position);  ; ;
             int NoOfDieroll = 0;
             Random random = new Random();
             int number = random.Next(0, 7);
